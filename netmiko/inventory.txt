@@ -1,0 +1,12 @@
+#Host:SSH Port:Username:Password:Enable Password
+172.16.0.1:22:admin:admin:admin
+172.16.0.2:22:admin:admin:admin
+172.16.0.3:22:admin:admin:admin
+172.16.0.4:22:admin:admin:admin
+# comments buried in file
+172.16.0.5:22:admin:admin:admin
+172.16.0.6:22:admin:admin:admin
+172.16.0.7:22:admin:admin:admin
+172.16.0.8:22:admin:admin:admin
+#172.16.0.9:22:admin:admin:admin
+172.16.0.100:22:admin:admin:admin

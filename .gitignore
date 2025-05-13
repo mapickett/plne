@@ -1,5 +1,7 @@
-# My updatres
+# My updates
 *-backup_*
+*-output_*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

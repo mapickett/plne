@@ -1,0 +1,3 @@
+show version
+sh ip route vrf clab-mgmt
+show arp vrf clab-mgmt
