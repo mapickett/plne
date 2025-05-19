@@ -2,3 +2,7 @@ netmiko
 paramiko
 requests
 scp
+# ASYNCIO
+aiohttp
+aiofiles
+asyncssh
