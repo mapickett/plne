@@ -6,3 +6,5 @@ scp
 aiohttp
 aiofiles
 asyncssh
+# NAPALM
+napalm
