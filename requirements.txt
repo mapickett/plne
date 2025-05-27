@@ -8,3 +8,5 @@ aiofiles
 asyncssh
 # NAPALM
 napalm
+# Serial Comms
+pyserial
