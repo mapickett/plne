@@ -1,0 +1,20 @@
+---
+- name: Show ip interface brief
+  hosts: ios
+
+  tasks:
+    - name: Show ip interface brief
+      cisco.ios.ios_command:
+        commands:
+          - show ip interface brief
+      register: output
+
+    - name: Show output
+      ansible.builtin.debug:
+        var: output
+
+    - name: Save output to file
+      ansible.builtin.lineinfile:
+        line: "{{ output.stdout[0] }}"
+        path: siib.log
+        create: yes

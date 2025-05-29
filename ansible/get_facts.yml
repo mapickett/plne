@@ -1,0 +1,16 @@
+---
+
+ - name: Gather Network Facts
+   hosts: all
+   connection: ansible.netcommon.network_cli
+   gather_facts: no
+   
+   tasks:
+
+    - name: Get Facts
+      cisco.ios.ios_facts:
+        gather_subset: min
+
+    - name: Display node info
+      debug:
+        msg: "The hostname is {{ansible_net_hostname }} and the OS is {{ ansible_net_version }}"

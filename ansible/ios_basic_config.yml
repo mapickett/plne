@@ -1,0 +1,12 @@
+---
+- name: Basic Config Change
+  hosts: ios
+
+  tasks:
+
+    - name: Create Loopback Interface
+      cisco.ios.ios_config:
+        lines:
+          - description Loopback Interface
+        parents: interface Loopback0
+        save_when: modified

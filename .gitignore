@@ -1,6 +1,9 @@
 # My updates
 *-backup_*
 *-output_*
+collections/
+roles/
+backup/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
