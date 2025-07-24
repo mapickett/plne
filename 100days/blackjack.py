@@ -79,7 +79,7 @@ if __name__ == "__main__":
         # Dealers Turn
         dealer_score = count_score(dealer_cards)
         if dealer_score == 21:
-            dealer_blackjack = true
+            dealer_blackjack = True
         while not player_busted and not player_blackjack:
             print(f"Dealer's cards: {dealer_cards}, Current Score: {dealer_score}")
             if dealer_score <= 16:
