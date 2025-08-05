@@ -57,3 +57,10 @@ n2 = 2
 op1 = '+'
 result = operations[op1](n1, n2)
 
+def is_prime(num):
+    for _ in range(2,num):
+        if num % _ == 0:
+            return False
+    return True
+
+print(is_prime(7))
