@@ -50,12 +50,23 @@ operations = {
     '+': add,
     '-': subtract,
     '*': multiply,
-    '/': divide
+    '/': divide,
+    'multiply': lambda x, y: x * y
 }
+result_multiply = operations['multiply'](5, 3)
 n1 = 1
 n2 = 2
 op1 = '+'
 result = operations[op1](n1, n2)
+
+# choice_map = {
+#     "report": print_report,
+#     "off": turn_off,
+#     "espresso": lambda: brew_beverage("espresso"),
+#     "latte": lambda: brew_beverage("latte"),
+#     "cappucino": lambda: brew_beverage("cappucino")
+# }
+# choice_map[choice]()
 
 def is_prime(num):
     for _ in range(2,num):
@@ -64,3 +75,40 @@ def is_prime(num):
     return True
 
 print(is_prime(7))
+
+# from turtle import Turtle, Screen
+
+# timmy = Turtle()
+# timmy.shape("turtle")
+# timmy.color("coral")
+# timmy.forward(100)
+# my_screen = Screen()
+# print(my_screen.canvheight, my_screen.canvwidth)
+# my_screen.exitonclick()
+
+import prettytable
+
+table = prettytable.PrettyTable()
+table.header_style = "cap"
+table.add_column("name", ['bill', 'bob', 'ted'])
+table.add_column("type", ['cowboy', 'farmer', 'alcoholic'])
+print(table)
+
+class User:
+
+    def __init__(self, user_id, username, hair_color='brown'):
+        self.id = user_id
+        self.username = username
+        self.followers = 0
+        self.following = 0
+        self.hair_color = hair_color
+
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
+
+user_1 = User('001', 'angela')
+user_2 = User('002', 'jack')
+user_1.follow(user_2)
+
+
