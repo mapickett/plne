@@ -112,3 +112,10 @@ user_2 = User('002', 'jack')
 user_1.follow(user_2)
 
 
+from turtle import Turtle, Screen
+
+timmy = Turtle()
+timmy.shape('circle')
+timmy.fd(100)
+screen = Screen()
+screen.exitonclick()
